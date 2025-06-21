@@ -1,8 +1,13 @@
 from sqlalchemy import create_engine, text
 from faker import Faker
 from random import uniform
+from dotenv import load_dotenv
+import os
 
-engine = create_engine("mysql+pymysql://root:12345678@localhost/BANK")
+load_dotenv()
+
+db_url = os.getenv("DB_URL")
+engine = create_engine(f"mysql+pymysql://{db_url}")
 faker = Faker()
 
 def init_database ():
