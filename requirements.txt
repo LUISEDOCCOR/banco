@@ -1,0 +1,6 @@
+Faker==37.4.0
+pandas==2.3.0
+PyMySQL==1.1.1
+SQLAlchemy==2.0.41
+streamlit==1.45.1
+cryptography
